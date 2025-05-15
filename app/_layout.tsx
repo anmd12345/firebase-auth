@@ -24,8 +24,8 @@ export default function RootLayout() {
   // Listen to Firebase Authentication state changes
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setIsLoggedIn(!!user); // Set `isLoggedIn` to true if a user is logged in
-      setAuthChecked(true); // Mark that auth state has been checked
+      setIsLoggedIn(!!user); 
+      setAuthChecked(true);
     });
 
     return unsubscribe; // Cleanup the listener when the component unmounts

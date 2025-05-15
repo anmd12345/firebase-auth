@@ -13,7 +13,7 @@ export default function SignupScreen() {
   const handleSignup = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      router.replace("/login"); // Navigate back to login
+      router.replace("/login");
     } catch (err: any) {
       setError(err.message);
     }
